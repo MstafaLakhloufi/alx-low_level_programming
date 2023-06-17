@@ -10,24 +10,24 @@
 
 int main(void)
 {
-        char ch = 'a';
-        char CH = 'A';
+	char ch = 'a';
+	char CH = 'A';
 
-        /*print a - z */
-        while (ch <= 'z')
-        {
-                putchar(ch);
-                ch++;
-        }
+	/*print a - z */
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		ch++;
+	}
 
-        /*print A - Z */
-        while (CH <= 'Z')
-        {
-                putchar(CH);
-                CH++;
-        }
+	/*print A - Z */
+	while (CH <= 'Z')
+	{
+		putchar(CH);
+		CH++;
+	}
 
-        putchar('\n');
+	putchar('\n');
 
-        return (0);
+	return (0);
 }
