@@ -3,9 +3,8 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - prints all possible combinations of two two-digit numbers.
+ * Return: 0 to exit
  */
 int main(void)
 {
