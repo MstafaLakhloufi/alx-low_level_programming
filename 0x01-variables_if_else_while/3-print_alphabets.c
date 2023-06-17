@@ -3,20 +3,21 @@
 /**
  * main - Entry point
  *
- * Description: print all alphabet letters
+ * Description: print all alphabet letters (lowercase and uppercase)
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char ch = 'a';
+	char ch;
 
-	while (ch <= 'z')
-	{
+	for (ch = 'a'; ch <= 'z'; ch++)
 		putchar(ch);
-		ch++;
-	}
+
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
+
 	putchar('\n');
 
-	return (0);
+	return 0;
 }
