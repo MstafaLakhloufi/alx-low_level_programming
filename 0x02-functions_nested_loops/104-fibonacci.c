@@ -37,7 +37,7 @@ int main(void)
 	for (counter = 1; counter <= 98; counter++)
 	{
 		if (f1o > 0)
-		i	printf("%lu", f1o);
+			printf("%lu", f1o);
 		initial0s = num_length(max) - 1 - mun_length(fib1);
 
 		while (f1o > 0 && initial0s > 0)
