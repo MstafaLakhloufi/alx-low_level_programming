@@ -37,8 +37,8 @@ int main(void)
 	for (counter = 1; counter <= 98; counter++)
 	{
 		if (f1o > 0)
-			printf("%lu", f1o);
-		initial0s = num_length(max) - 1 - mun_length(f1);
+		i	printf("%lu", f1o);
+		initial0s = num_length(max) - 1 - mun_length(fib1);
 
 		while (f1o > 0 && initial0s > 0)
 		{
@@ -46,13 +46,13 @@ int main(void)
 			initial0s--;
 		}
 
-		printf("%lu", f1);
+		printf("%lu", fib1);
 
-		sum = (f1 + f2) % max;
-		sumo = f1o + f2o + (f1 + f2) / max;
-		f1 = f2;
+		sum = (fib1 + fib2) % max;
+		sumo = f1o + f2o + (fib1 + fib2) / max;
+		fib1 = fib2;
 		f1o = f2o;
-		f2 = sum;
+		fib2 = sum;
 		f2o = sumo;
 
 		if (counter != 98)
