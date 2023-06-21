@@ -34,7 +34,7 @@ int main(void)
 	unsigned long fib1 = 1, fib2 = 2, sum,
 		      max = 100000000, f1o = 0, f2o = 0, sumo = 0;
 
-	for (counter = 1; counter <= 98, counter++)
+	for (counter = 1; counter <= 98; counter++)
 	{
 		if (f1o > 0)
 			printf("%lu", f1o);
