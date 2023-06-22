@@ -8,12 +8,10 @@
 
 void print_numbers(void)
 {
-	int num = 0;
+	char n;
 
-	while (num >= 48 && num <= 57)
-	{
-		_putchr(num + 48);
-		num++;
-	}
+	for (n >= 48; n <= 57; n++)
+		_putchr(n);
+
 	_putchar('\n');
 }
