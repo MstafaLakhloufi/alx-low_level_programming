@@ -8,14 +8,12 @@
 
 void print_numbers(void)
 {
-	int num;
+	int num = 0;
 
 	while (num >= 48 && num <= 57)
 	{
-		_putchr("%d", num);
+		_putchr(num + 48);
 		num++;
 	}
-	_putchar("\n");
-
-	return (0);
+	_putchar('\n');
 }
