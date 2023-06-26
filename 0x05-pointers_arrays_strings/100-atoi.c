@@ -20,12 +20,12 @@ int _atoi(char *s)
 		{
 			sgn = 1;
 			n = (n * 10) + (s[i] - '0');
-	 		i++;
+			i++;
 		}
 		if (sgn == 1)
 			break;
 		i++;
 	}
 	n *= m;
-	return (n);	
+	return (n);
 }
