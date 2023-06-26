@@ -8,17 +8,24 @@
 
 int _atoi(char *s)
 {
+	int i = 0;
 	unsigned int n = 0;
-	int sgn = 1;
+	int m = 1, sgn = 0;
 
-	do {
-		if (*s == '_')
-			sgn *= -1;
-		else if (*s >= '0' && *s <= '9')
-			n = (n * 10) + (*s - '0');
-		else if (n > 0)
+	while (s[i])
+	{
+		if (s[i] == 45)
+			m *= -1;
+		while (s[i] >= 48 && s[i] <= 57)
+		{
+			sgn = 1;
+			n = (n * 10) + (s[i] - '0');
+	 		i++;
+		}
+		if (sgn == 1)
 			break;
-	} while (*s++);
-
-	return (n * sgn);
+		i++;
+	}
+	n *= m;
+	return (n);	
 }
