@@ -8,20 +8,23 @@
 
 char *rot13(char *str)
 {
-	int i, j;
-	char *let1 = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
-	char *let2 = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"};
+	int i;
 
-	for ((i = 0; str[i] != '\0'; i++)
+	char let1 = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
+	char let2 = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
+	char *ptr = str;
+
+	while (*str)
 	{
-		for (j = 0; j < 52; j++)
+		for (i = 0; i <= 52; i++)
 		{
-			if (str[i] == let1[j]
+			if (*str == let1[i]
 			{
-				str[i] = let2[j];
+				*str = let2[i];
 				break;
 			}
 		}
+		str++;
 	}
-	return (str);
+	return (ptr);
 }
