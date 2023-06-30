@@ -20,7 +20,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
  * @r: the buffer to store the result
  * @r_index: the current index of the buffer
  * Return: if r can store sum, pointer to the result
- *	if r cannot store the sum - 0;
+ *	if r cannot store the sum - 0
  */
 
 char *add_strings(char *n1, char *n2, char *r, int r_index)
