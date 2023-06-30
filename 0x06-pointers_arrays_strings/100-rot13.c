@@ -18,7 +18,7 @@ char *rot13(char *str)
 	{
 		for (i = 0; i <= 52; i++)
 		{
-			if (*str == let1[i]
+			if (*str == let1[i])
 			{
 				*str = let2[i];
 				break;
