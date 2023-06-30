@@ -2,27 +2,27 @@
 
 /**
  * *leet - a function that encodes a string into 1337
- * @str: string
+ * @ch: string
  * Return: string
  */
 
-char *leet(char *str)
+char *leet(char *ch)
 {
-	char arr1[] = "aeotlAEOTL";
-	char arr2[] = "4307143071";
-	int i = 0;
-	int j;
+	char *cp = ch;
+	char arr1[] = {'A', 'E', 'O', 'T', 'L'};
+	int arr2[] = {4, 3, 0, 7, 1}
+	unsigned int i;
 
-	while (*(str + i) != '\0')
+	while (*ch)
 	{
-		for (j = 0; j <= 9; j++)
+		for (i = 0; i < sizeof(arr1) / sizeof(char); i++)
 		{
-			if (*(str + i) == arr1[j]
+			if (*ch == arr1[i] || *ch == arr1[i] + 32)
 			{
-				*(str + i) = arr2[j];
+				*ch = 48 + arr2[i];
 			}
 		}
-		i++;
+		ch++;
 	}
-	return (str);
+	return (cp);
 }
