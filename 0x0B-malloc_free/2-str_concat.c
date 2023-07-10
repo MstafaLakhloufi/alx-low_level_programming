@@ -6,7 +6,7 @@
  * Return: Always 0 (success)
 */
 
-int *_strlen(char *str)
+int _strlen(char *str)
 {
 	int size = 0;
 
