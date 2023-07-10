@@ -11,7 +11,7 @@
 char *_strdup(char *str)
 {
 	int x = 0, y = 1;
-	char *s;
+	char *n;
 
 	if (str == NULL)
 		return (NULL);
@@ -19,17 +19,17 @@ char *_strdup(char *str)
 	while (str[y])
 		y++;
 
-	s = malloc((sozeof(char) * y) + 1);
+	n = malloc((sizeof(char) * y) + 1);
 
 	if (n == NULL)
 		return (NULL);
 
 	while (x < y)
 	{
-		s[x] = str[x];
+		n[x] = str[x];
 		x++;
 	}
 
-	s[x] = '\0';
+	n[x] = '\0';
 	return (n);
 }
