@@ -7,7 +7,7 @@
  * @grid: 2d grid
  * @height: height dimension of grid
  * Description: frees memory of grid
- * Return: nothing
+ * Return: no return
  */
 
 void free_grid(int **grid, int height)
@@ -17,7 +17,7 @@ void free_grid(int **grid, int height)
 
 	for (x = 0; x < height; x++)
 	{
-		free(grid[i]);
+		free(grid[x]);
 	}
 
 	free(grid);
