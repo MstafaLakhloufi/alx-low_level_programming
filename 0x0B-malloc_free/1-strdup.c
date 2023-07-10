@@ -19,17 +19,17 @@ char *_strdup(char *str)
 	while (str[y])
 		y++;
 
-	n = malloc((sozeof(char) * y) + 1);
+	s = malloc((sozeof(char) * y) + 1);
 
 	if (n == NULL)
 		return (NULL);
 
 	while (x < y)
 	{
-		n[x] = str[x];
+		s[x] = str[x];
 		x++;
 	}
 
-	n[x] = '\0';
+	s[x] = '\0';
 	return (n);
 }
