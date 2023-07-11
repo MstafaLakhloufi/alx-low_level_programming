@@ -42,17 +42,12 @@ char **strtow(char *str)
 
 	while (*(str + len))
 		len++;
-
 	wrds = word_count(str);
-
 	if (wrds == 0)
 		return (NULL);
-
 	mtrx = (char **) malloc(sizeof(char *) * (wrds + 1));
-
 	if (mtrx == NULL)
 		return (NULL);
-
 	for (x = 0; x <= len; x++)
 	{
 		if (str[x] == ' ' || str[x] == '\0')
@@ -60,12 +55,9 @@ char **strtow(char *str)
 			if (c)
 			{
 				end = x;
-
 				temp = (char *) malloc(sizeof(char) * (c + 1));
-
 				if (temp == NULL)
 					return (NULL);
-
 				while (start < end)
 					*temp++ = str[start++];
 				*temp = '\0';
@@ -78,7 +70,6 @@ char **strtow(char *str)
 		else if (c++ == 0)
 			start = x;
 	}
-
 	mtrx[y] = NULL;
 	return (mtrx);
 }
