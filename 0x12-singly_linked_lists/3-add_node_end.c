@@ -5,11 +5,11 @@
  * @head: address of pointer to the head node
  * @str: string to put in the new node
  *
- * Return: size of list
+ * Return:  address of the new element, or NULL if it failed
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *newçnode;
+	list_t *new_node;
 	list_t *temp = *head;
 	unsigned int length = 0;
 
