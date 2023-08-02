@@ -28,7 +28,7 @@ size_t listint_len(const listint_t *head)
 		if (newlist == node)
 		{
 			newlist = head;
-			while (tortoise != node)
+			while (newlist != node)
 			{
 				nodes++;
 				newlist = newlist->next;
